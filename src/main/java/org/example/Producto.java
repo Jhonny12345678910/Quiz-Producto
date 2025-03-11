@@ -3,10 +3,10 @@ package org.example;
 public class Producto {
     private String codigo;
     private String nombre;
-    private double precio;
+    private int precio;
     private int cantidadEnStock;
 
-    public Producto(String codigo, String nombre, double precio, int cantidadEnStock) {
+    public Producto(String codigo, String nombre, int precio, int cantidadEnStock) {
         this.codigo = codigo;
         this.nombre = nombre;
         setPrecio(precio);
@@ -73,7 +73,7 @@ public class Producto {
             System.out.println("El precio no puede ser negativo. Se establecerá en 0.");
             this.precio = 0;
         } else {
-            this.precio = precio;
+            this.precio = (int) precio;
         }
     }
 

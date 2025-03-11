@@ -46,7 +46,7 @@ public class Main {
                         if (cantidad < 0) System.out.println("La cantidad en stock no puede ser negativa.");
                     } while (cantidad < 0);
 
-                    productos.add(new Producto(codigo, nombre, precio, cantidad));
+                    productos.add(new Producto(codigo, nombre, (int) precio, cantidad));
                     System.out.println("Producto agregado correctamente.");
                     break;
 
@@ -135,3 +135,4 @@ public class Main {
         }
     }
 }
+/////completado
